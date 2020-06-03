@@ -9,7 +9,7 @@ class CicloFinanceiro {
     constructor(mes, ano){
         this.mes = mes
         this.ano = ano
-        this.Lancamento = []
+        this.lancamentos = []
     }
 
     addLancamentos(...lancamentos){
@@ -30,4 +30,4 @@ const contaDeLuz = new Lancamento('Luz', -220)
 
 const contas = new CicloFinanceiro(6, 2018)
 contas.addLancamentos(salario, contaDeLuz)
-console.log(contas.sumario)
+console.log(contas.sumario())
